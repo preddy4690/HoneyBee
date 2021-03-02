@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackageId>Honeycomb.AspNetCore</PackageId>
+    <VersionPrefix>1.1.0</VersionPrefix>
+    <VeresionSuffix>local</VeresionSuffix>
+    <Authors>Hoenycomb</Authors>
+    <Company>Honeycomb</Company>
+    <Title>Client package for Honeycomb.io</Title>
+    <Description>Client package for Honeycomb.io</Description>
+    <Copyright>Copyright 2021</Copyright>
+    <PackageIcon>honeycomb.png</PackageIcon>
+    <PackageTags>Honeycomb;libhoney;Observability;Tracing;AspNetCore</PackageTags>
+    <PackageProjectUrl>https://github.com/honeycombio/libhoney-dotnet</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageReleaseNotes>https://github.com/honeycombio/libhoney-dotnet/releases</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/honeycombio/libhoney-dotnet.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../honeycomb.png" Pack="true" PackagePath="\" />
+    <PackageReference Include="Honeycomb" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="2.1" />
+  </ItemGroup>
+
+</Project>
